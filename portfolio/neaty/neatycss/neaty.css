@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.left-fixed{
+	height: 100%;
+	position: fixed;
+	background-color: #156faf;
+	width: 30%;
+	float: right;
+}
+.logo{
+	text-align: center;
+	padding-top: 50px;
+}
+.logo-text{
+	color: white;
+	padding-top: 10px;
+}
+.navigation{
+	text-align: center;
+}
+.navigation li{
+	padding-top: 30px;
+}
+.navigation a{
+	color: white;
+	font-size: 28px;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	transition: color .15s
+    ease-in-out,background-color .15s
+
+}
+.navigation a:hover{
+	text-decoration: none;
+	color: #d6d464;
+	transition: all 0.2s ease;
+}
+.right-content{
+	width: 70%;
+	float: right;
+}
+.main-img{
+	overflow-x: hidden;
+	max-height: auto;
+}
+.main-img img{
+	max-width: 100%;
+}
+.welcome-info h1{
+	padding-left: 10%;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: #4f7fcc;
+	padding-top: 2.5em;
+	font-size: 48px;
+}
+.welcome-info p{
+	padding-left: 10%;
+	padding-top: 2.5em;
+	font-family: 'Raleway', sans-serif,;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.80em;
+}
+.aboutus-info h1{
+	padding-left: 57%;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: #4f7fcc;
+	font-size: 38px;
+	padding-top: 55px;
+}
+.aboutus-info img{
+	float: left;
+	max-width: 100%;
+	height: auto;
+	padding-left: 10%;
+	padding-top: 3.5em;
+}
+.aboutus-info p{
+	padding-left: 57%;
+	padding-top: 2.5em;
+	font-family: 'Raleway', sans-serif,;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.80em;	
+}
+.about-btn{
+	text-decoration: none;
+	color: white;
+	background-color: #376bbf;
+	margin-left: 70%;
+	padding: 20px 50px 20px 50px;
+    border-radius: 40px;
+    font-size: 22px;
+    transition: color .15s
+    ease-in-out,background-color .15s
+    ease-in-out;
+
+}
+.about-btn:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #4f90f9;
+	transition: all 0.3s ease;
+}
+.gallery-1-gallery{
+	padding-left: 10%;
+	padding-top: 2.5em;
+}
+.gallery-1-gallery h1{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: #4f7fcc;
+	padding-top: 2.5em;
+	font-size: 38px;
+}
+.gallery-1-gallery img{
+	width: 150px;
+	height: 150px;
+	margin-top: 2.5em;
+	transition: -webkit-transform 0.25s ease;
+
+}
+.gallery-1-gallery img:active{
+	 -webkit-transform: scale(2);
+}
+.gallery-1-gallery a{
+	cursor: zoom-in;
+}
+.gallery-2-gallery{
+	padding-left: 10%;
+	padding-top: 2.5em;
+}
+.gallery-2-gallery h1{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: #4f7fcc;
+	padding-top: 2.5em;
+	font-size: 38px;
+}
+.gallery-2-gallery img{
+	width: 250px;
+	height: 200px;
+	margin-top: 2.5em;
+	transition: -webkit-transform 0.25s ease;
+
+}
+.gallery-2-gallery img:active{
+	 -webkit-transform: scale(2);
+}
+.gallery-2-gallery a{
+	cursor: zoom-in;
+}
+.gallery-3-gallery{
+	padding-left: 10%;
+	padding-top: 2.5em;
+}
+.gallery-3-gallery h1{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: #4f7fcc;
+	padding-top: 2.5em;
+	font-size: 38px;
+}
+.gallery-3-gallery img{
+	width: 200px;
+	height: 200px;
+	margin-top: 2.5em;
+	transition: -webkit-transform 0.25s ease;
+	overflow: hidden;
+
+}
+.gallery-3-gallery img:active{
+	 -webkit-transform: scale(2);
+}
+.gallery-3-gallery a{
+	cursor: zoom-in;
+}
+.contact-data{
+	display: block;
+	float: left;
+	
+}
+.contact-info{
+	padding-left: 10%;
+	padding-top: 2.5em;
+	
+	
+}
+.contact-info h1{
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: #4f7fcc;
+	padding-top: 2.5em;
+	font-size: 38px;
+}
+.col-6{
+	padding-left: 10%;
+	padding-top: 2em;
+	max-width: 100% !important;
+	
+}
+.tm-button{
+	    background-color: #376bbf;
+	    color: white;
+	    display: inline-block;
+	    font-size: 1.4rem;
+    	border-width: initial;
+    	border-style: none;
+    	border-color: initial;
+    	border-image: initial;
+    	padding: 18px 55px;
+    	border-radius: 40px;
+    	cursor: pointer!important;
+    	margin-right: 65%;
+    	transition: color .15s
+    	ease-in-out,background-color .15s
+    	ease-in-out;
+}
+.tm-button:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #4f90f9;
+	transition: all 0.3s ease;
+}
+.contact-form{
+	float: left;
+	width: 50%;
+	
+}
+.tm-contact-right{
+	margin-left: 57%!important;
+	max-width: 43% !important;
+	overflow-x: hidden;
+}
+.tm-contact-right p{
+	font-family: 'Raleway', sans-serif,;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.50em;
+}
+address{
+	font-family: 'Raleway', sans-serif,;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.80em;
+}
+.copyright{
+	font-family: 'Raleway', sans-serif,;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.80em;
+	padding-left: 10%;
+	padding-top: 23em;
+}
+.copyright a:hover{
+	text-decoration: none;
+	color: #007bff;
+
+}
