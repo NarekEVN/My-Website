@@ -12,6 +12,7 @@ window.onload = function(){
   const navbar = document.querySelector(".nav_bar");
   toggler.addEventListener('click', function(){
     navbar.classList.toggle("active");
+    navbar.style.top = header.offsetHeight + "px";
     this.classList.toggle("active_btn");
   })
 
