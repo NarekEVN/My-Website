@@ -423,7 +423,7 @@ section {
     pointer-events: none;
     height: 0px;
     position: absolute;
-    bottom: -72px;
+    top: 72px;
     left: 0;
     z-index: 1;
   }
