@@ -7,7 +7,6 @@ window.onload = function(){
       event.preventDefault();
     })
   })
-  
 
   const toggler = document.querySelector(".menu_toggler");
   const navbar = document.querySelector(".nav_bar");
@@ -16,28 +15,19 @@ window.onload = function(){
     this.classList.toggle("active_btn");
   })
 
-  const tohome = document.querySelector(".tohome");
-  tohome.addEventListener("click",function(){
-    window.scroll(0, 0);
-  })
+  scrollbtns(".toskills", "#skills");
+  scrollbtns(".toportfolio", "#portfolio");
+  scrollbtns(".tocontact", "#contact");
+  scrollbtns(".tohome", ".bg");
 
-  const toskills = document.querySelector(".toskills");
-  toskills.addEventListener("click",function(){
-    let skills_top = document.querySelector("#skills").offsetTop - header.offsetHeight;
-    window.scroll(0, skills_top);
-  })
-
-  const toportfolio = document.querySelector(".toportfolio");
-  toportfolio.addEventListener("click",function(){
-    let portfolio_top = document.querySelector("#portfolio").offsetTop - header.offsetHeight;
-    window.scroll(0, portfolio_top);
-  })
-
-  const tocontact = document.querySelector(".tocontact");
-  tocontact.addEventListener("click",function(){
-    let contact_top = document.querySelector("#contact").offsetTop - header.offsetHeight;
-    window.scroll(0, contact_top);
-  })
+  function scrollbtns(link, element){
+    const toelement = document.querySelector(link);
+    toelement.addEventListener("click", function(){
+      let top = document.querySelector(element).offsetTop - header.offsetHeight;
+      window.scroll(0, top);
+    })
+    
+  }
 
   window.onscroll = function(){
     if (window.pageYOffset > header.offsetTop){
