@@ -24,7 +24,6 @@ window.onload = function(){
   function scrollbtns(link, element){
     const toelement = document.querySelector(link);
     toelement.addEventListener("click", function(){
-      let top = document.querySelector(element).offsetTop - header.offsetHeight;
       window.scroll(0, top);
     })
     

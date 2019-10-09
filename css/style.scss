@@ -303,7 +303,7 @@ section{
   header{
     .active{
       position: relative;
-      bottom: auto;
+      top: 0;
       background: transparent;
       width: auto;
       li{
@@ -325,6 +325,7 @@ section{
     pointer-events: none;
     height: 0px;
     position: absolute;
+    top: 72px;
     // left: 0;
     // right: 0;
     z-index: 1;
