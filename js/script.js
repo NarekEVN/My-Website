@@ -1,5 +1,10 @@
 window.onload = function(){
   const header = document.querySelector("header");
+  const top = document.querySelector(".top");
+  
+  top.addEventListener('click', function(){
+    window.scroll(0,0);
+  })
 
   const btnlink = document.querySelectorAll("a[href='#']");
   btnlink.forEach(function(i){
@@ -35,6 +40,12 @@ window.onload = function(){
     }
     else{
       header.classList.remove("fixed_header");
+    }
+    if (window.pageYOffset > 200){
+      top.classList.add("activetop");
+    }
+    else{
+      top.classList.remove("activetop");
     }
   }
 
