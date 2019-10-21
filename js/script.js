@@ -24,6 +24,7 @@ window.onload = function(){
   scrollbtns(".toportfolio", "#portfolio");
   scrollbtns(".tocontact", "#contact");
   scrollbtns(".tohome", ".bg");
+  scrollbtns(".tocertificate", "#certificate");
 
   function scrollbtns(link, element){
     const toelement = document.querySelector(link);

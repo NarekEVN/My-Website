@@ -154,7 +154,8 @@ section:not(.bg){
 .skills_header,
 .portfolio_header,
 .about_header,
-.contact_header{
+.contact_header,
+.certificate_header{
   text-align: center;
   font-size: 30px;
   color: $dark;
@@ -195,6 +196,45 @@ section:not(.bg){
       font-size: 25px;
       color: $dark;
     }
+  }
+}
+.card{
+  position: relative;
+  width: 70%;
+  border: 1px solid #EEEEEE;
+  border-radius: 15px;
+  height: 500px;
+  perspective: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  .inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+  }
+  &:hover{
+    .inner{
+      transform: rotateY(180deg);
+    }
+  }
+  .front, .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .back{
+    transform: rotateY(180deg);
   }
 }
 .portfolio{
@@ -339,6 +379,9 @@ section{
   }
 }
 @media screen and (max-width: 992px){
+  .card{
+    height: 300px;
+  }
   .nav_bar{
     // display: none;
     opacity: 0;

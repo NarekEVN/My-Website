@@ -183,7 +183,8 @@ section:not(.bg) {
 .skills_header,
 .portfolio_header,
 .about_header,
-.contact_header {
+.contact_header,
+.certificate_header {
   text-align: center;
   font-size: 30px;
   color: #2c2b2b;
@@ -239,6 +240,58 @@ section:not(.bg) {
   font-weight: bold;
   font-size: 25px;
   color: #2c2b2b;
+}
+
+.card {
+  position: relative;
+  width: 70%;
+  border: 1px solid #EEEEEE;
+  border-radius: 15px;
+  height: 500px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.card .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card:hover .inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .front, .card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card .front img, .card .back img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .portfolio {
@@ -442,6 +495,9 @@ section {
 }
 
 @media screen and (max-width: 992px) {
+  .card {
+    height: 300px;
+  }
   .nav_bar {
     opacity: 0;
     pointer-events: none;
